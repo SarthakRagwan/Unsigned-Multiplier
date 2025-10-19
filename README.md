@@ -36,6 +36,10 @@ All shifted partial products are summed to obtain the final product P.
 
 This design uses generate blocks to create partial products dynamically based on parameterized widths.
 
+**Schematic**
+
+<img width="1209" height="922" alt="multiplier" src="https://github.com/user-attachments/assets/230946bd-129a-4cc6-a5b4-fe38ccd3d20c" />
+
 **Testbench: tb.v**
 
 The testbench verifies the multiplier by exhaustively testing all possible input combinations:
