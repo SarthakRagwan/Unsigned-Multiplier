@@ -1,12 +1,13 @@
 // ================================================================
-// Module Name   : multiplier
+// Module Name   : Multiplier
+// Author        : Sarthak Kumar
 // Description   : Parameterized Unsigned Multiplier
 //                 Multiplies an M-bit number 'A' with an N-bit number 'B'
 //                 using generate blocks to create partial products and
 //                 then sums them to form the final product 'P'.
 // Parameters    : 
-//     M : Width of input A (default 6)
-//     N : Width of input B (default 4)
+//     M : Width of input A (default 3)
+//     N : Width of input B (default 2)
 // Inputs        : 
 //     A : M-bit unsigned multiplicand
 //     B : N-bit unsigned multiplier
@@ -38,7 +39,7 @@ module multiplier(A, B, P);
     end
   endgenerate
 
-  // Sum all partial products to get the final product
+  // Sum all partial products after shifting to get the final product
   integer k;
   always @(*) begin
     P = 0;
@@ -47,3 +48,4 @@ module multiplier(A, B, P);
     end
   end
 endmodule
+
