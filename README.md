@@ -3,7 +3,7 @@ Parameterizable unsigned multiplier in Verilog with exhaustive testbench. Genera
 
 Author: Sarhak Kumar
 
-Overview
+**Overview**
 
 This repository contains a parameterized unsigned multiplier written in Verilog. It multiplies two binary numbers of configurable widths using partial products and bitwise addition. The design is modular, readable, and suitable for FPGA/ASIC implementation.
 
@@ -14,17 +14,17 @@ M : Width of the multiplicand A (default = 6)
 
 N : Width of the multiplier B (default = 4)
 
-Inputs
+**Inputs**
 
 A : M-bit unsigned multiplicand
 
 B : N-bit unsigned multiplier
 
-Outputs
+**Outputs**
 
 P : (M+N)-bit unsigned product
 
-Theory
+**Theory**
 
 An unsigned multiplier works by generating partial products for each bit of the multiplier and then summing them appropriately:
 
@@ -36,7 +36,7 @@ All shifted partial products are summed to obtain the final product P.
 
 This design uses generate blocks to create partial products dynamically based on parameterized widths.
 
-Testbench: tb.v
+**Testbench: tb.v**
 
 The testbench verifies the multiplier by exhaustively testing all possible input combinations:
 
@@ -50,7 +50,7 @@ Dumps simulation data to a .vcd file for waveform viewing.
 
 This ensures the multiplier works correctly for all input combinations of the defined widths.
 
-Example Output
+**Example Output**
 
 A = 0  |  B = 2  |  P =  0
 
@@ -69,7 +69,7 @@ A = 6  |  B = 2  |  P = 12
 A = 7  |  B = 3  |  P = 21
 
 
-Features
+**Features**
 
 Fully parameterized (adjust M and N).
 
