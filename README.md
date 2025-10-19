@@ -73,7 +73,7 @@ A = 7  |  B = 3  |  P = 21
 
 Fully parameterized (adjust M and N).
 
-Uses structural Verilog concepts (generate blocks).
+Uses modular Verilog concepts (generate blocks).
 
 Exhaustive testbench for verification.
 
